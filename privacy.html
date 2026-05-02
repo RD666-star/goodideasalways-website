@@ -4,50 +4,195 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BeatLayer Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      color: #2D3436;
-      background: #FEFCF9;
-      line-height: 1.7;
-      padding: 40px 24px;
-    }
-    .container { max-width: 680px; margin: 0 auto; }
-    h1 { font-size: 1.8rem; margin-bottom: 8px; }
-    .meta { color: #636E72; font-size: 0.9rem; margin-bottom: 32px; }
-    h2 { font-size: 1.2rem; margin: 28px 0 12px; }
-    p { margin-bottom: 16px; }
-    a { color: #FF6B6B; }
-    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #F0EDEA; color: #636E72; font-size: 0.85rem; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Nunito',-apple-system,BlinkMacSystemFont,sans-serif;color:#2D3436;background:#FEFCF9;line-height:1.8;padding:48px 24px 80px}
+    .container{max-width:720px;margin:0 auto}
+    h1{font-size:2rem;font-weight:800;margin-bottom:6px;background:linear-gradient(135deg,#FF6B6B,#A29BFE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .meta{color:#636E72;font-size:.9rem;margin-bottom:36px;padding-bottom:24px;border-bottom:2px solid #F0EDEA}
+    h2{font-size:1.3rem;font-weight:800;margin:40px 0 14px;padding-left:16px;position:relative}
+    h2::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:4px;background:#FF6B6B;border-radius:2px}
+    h3{font-size:1.05rem;font-weight:700;margin:24px 0 10px;color:#636E72}
+    p{margin-bottom:14px}
+    a{color:#FF6B6B;text-decoration:none}
+    a:hover{text-decoration:underline}
+    ul,ol{margin:10px 0 14px 24px}
+    li{margin-bottom:6px}
+    table{width:100%;border-collapse:collapse;margin:16px 0 20px;font-size:.9rem}
+    th{background:#F8F5F2;text-align:left;padding:10px 14px;font-weight:700;border-bottom:2px solid #F0EDEA}
+    td{padding:10px 14px;border-bottom:1px solid #F0EDEA}
+    tr:last-child td{border-bottom:none}
+    code{background:#F1F3F5;padding:2px 7px;border-radius:5px;font-size:.88em;font-family:'SF Mono',Menlo,monospace}
+    .summary-box{background:linear-gradient(135deg,#FFF5F5,#F0F9FF);border-radius:14px;padding:24px 28px;margin:20px 0 28px;border:1px solid #F0EDEA}
+    .summary-box ul{margin-left:20px}
+    .summary-box li{margin-bottom:8px}
+    footer{margin-top:56px;padding-top:24px;border-top:2px solid #F0EDEA;color:#636E72;font-size:.85rem;text-align:center}
+    .lang-switch{display:inline-block;margin-bottom:24px;background:#FECA57;color:#2D3436;padding:5px 16px;border-radius:20px;font-size:.85rem;font-weight:700}
+    .lang-switch:hover{text-decoration:none}
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>BeatLayer Privacy Policy</h1>
-    <p class="meta">Last updated: May 2, 2026 · Applies to: BeatLayer</p>
+    <a href="privacy_zh.html" class="lang-switch">中文版</a>
+    <h1>Privacy Policy for BeatLayer</h1>
+    <p class="meta">Effective Date: 2026-05-01 · Last Updated: 2026-05-01</p>
 
-    <h2>Information We Collect</h2>
-    <p>BeatLayer does not collect, store, or transmit any personal data. All app settings are stored locally on your device.</p>
+    <p>This Privacy Policy describes how BeatLayer ("the App", "we", "us") handles information when you use our iOS application. BeatLayer is a running cadence metronome developed by an independent developer ("the Developer"). We respect your privacy and have designed BeatLayer to collect as little data as technically possible.</p>
+    <p>If you have any questions, contact us at <strong>goodideasalwayswork@zohomail.com</strong>.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>BeatLayer does not use any third-party analytics, advertising, or tracking services.</p>
+    <h2>1. Summary (TL;DR)</h2>
+    <div class="summary-box"><ul>
+      <li>BeatLayer <strong>has no user accounts</strong>. There is no sign-up, no email, no password, no cloud sync.</li>
+      <li>We do <strong>not</strong> collect your name, email, phone number, precise or approximate location, contacts, photos, health data, or running routes.</li>
+      <li>We do <strong>not</strong> sell or share your data with advertisers or data brokers.</li>
+      <li>We do <strong>not</strong> use your data to track you across apps or websites owned by other companies. <strong>No App Tracking Transparency (ATT) prompt is required.</strong></li>
+      <li>The only data that leaves your device is <strong>anonymous product analytics</strong> sent to our analytics provider (Vibe Tracer) so we can understand which features are used and fix bugs.</li>
+      <li>Motion sensor data (used to detect your cadence) is processed <strong>in memory in real time and is never stored, never transmitted</strong>.</li>
+    </ul></div>
 
-    <h2>Data Storage</h2>
-    <p>All data remains on your device. We do not operate any servers that receive your data.</p>
+    <h2>2. What We Collect</h2>
+    <h3>2.1 Anonymous Analytics (via Vibe Tracer)</h3>
+    <p>We use <strong>Vibe Tracer</strong> (vibetracer.xyz) as our analytics provider. Vibe Tracer automatically generates a random, app-scoped <strong>anonymous device identifier</strong> that cannot be used to identify you personally and is not the Apple IDFA.</p>
+    <p><strong>Automatically collected:</strong></p>
+    <ul>
+      <li>Anonymous device identifier (generated by Vibe Tracer; reset if you reinstall the App)</li>
+      <li>Session start / session end timestamps</li>
+      <li>App version</li>
+      <li>iOS version</li>
+      <li>Device model (e.g., "iPhone 15")</li>
+      <li>Device locale (e.g., "en-US", "zh-Hans")</li>
+    </ul>
+    <p><strong>Product events we explicitly log:</strong></p>
+    <table>
+      <tr><th>Event</th><th>When it fires</th></tr>
+      <tr><td><code>metronome_started</code></td><td>You start the metronome</td></tr>
+      <tr><td><code>metronome_stopped</code></td><td>You stop the metronome</td></tr>
+      <tr><td><code>progressive_completed</code></td><td>A progressive cadence training session reaches its target</td></tr>
+      <tr><td><code>paywall_viewed</code></td><td>The upgrade screen is shown</td></tr>
+      <tr><td><code>paywall_upgrade_tapped</code></td><td>You tap the upgrade button on the paywall</td></tr>
+      <tr><td><code>purchase_completed</code></td><td>An in-app purchase succeeds</td></tr>
+    </table>
+    <p><strong>Properties attached to events (non-personal):</strong></p>
+    <ul>
+      <li>BPM value</li>
+      <li>Beat sound name (e.g., "woodblock", "drum")</li>
+      <li>Training duration bucket (e.g., "5–10min")</li>
+      <li>Mode (<code>fixed</code> / <code>progressive</code>)</li>
+      <li>Cadence detection source (<code>phone</code> / <code>timer</code>)</li>
+      <li>Whether other audio is playing on the device (a single boolean — we do <strong>not</strong> read what the audio is, who produced it, or any media library content)</li>
+    </ul>
+    <p>We use this analytics data <strong>solely</strong> to improve the App. It is not shared with advertisers or data brokers and is not used to build user profiles for advertising.</p>
 
-    <h2>Children's Privacy</h2>
-    <p>BeatLayer does not knowingly collect any personal information from children under the age of 13. Since the app does not collect any data at all, no special measures are required.</p>
+    <h3>2.2 In-App Purchases (via Apple StoreKit 2)</h3>
+    <p>BeatLayer offers a one-time in-app purchase to unlock Pro features. Purchases are processed entirely by <strong>Apple</strong>. The App itself only receives the product identifier (e.g., <code>com.beatlayer.pro</code>) and a boolean indicating whether Pro is unlocked.</p>
+    <p>We do <strong>not</strong> receive your credit card number, Apple ID email, billing address, or name. Apple's handling of payment data is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+    <h3>2.3 Motion Data (Core Motion)</h3>
+    <p>To detect your running cadence in Progressive Mode, BeatLayer reads accelerometer data via Apple's <strong>Core Motion</strong> framework (<code>CMMotionManager</code>). This data is:</p>
+    <ul>
+      <li>Processed <strong>in memory in real time</strong> to estimate steps per minute,</li>
+      <li><strong>Never written to disk</strong>,</li>
+      <li><strong>Never transmitted off the device</strong>,</li>
+      <li>Discarded the moment Progressive Mode stops.</li>
+    </ul>
+    <p>We do not use <code>CMPedometer</code> and we do not access HealthKit in V1.</p>
 
-    <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, please contact us at rongdeng.huang666@gmail.com.</p>
+    <h3>2.4 Audio Mixing State (AVAudioSession)</h3>
+    <p>The App reads a single boolean — <code>AVAudioSession.isOtherAudioPlaying</code> — to decide how to mix the metronome with whatever music or podcast you're already playing. We do <strong>not</strong> access the audio content, the media library, song titles, artist names, or any metadata about what you are listening to.</p>
 
-    <footer>
-      <p>&copy; 2026 Good Ideas Always Work</p>
-    </footer>
+    <h3>2.5 On-Device Settings (UserDefaults)</h3>
+    <p>Your preferences (last-used BPM, selected sound, Pro unlock state, etc.) are stored locally on your device using iOS <code>UserDefaults</code>. This data <strong>never leaves your device</strong>.</p>
+
+    <h2>3. What We Do NOT Collect</h2>
+    <p>For clarity, BeatLayer does <strong>not</strong> collect any of the following:</p>
+    <ul>
+      <li>Name, email address, phone number, or any account credentials</li>
+      <li>Precise or approximate location, GPS coordinates, or running routes</li>
+      <li>Contacts, calendar, photos, or files</li>
+      <li>Health, fitness, or HealthKit data</li>
+      <li>Audio recordings, microphone input, or media library content</li>
+      <li>Browsing or search history</li>
+      <li>Advertising identifiers (IDFA) for tracking purposes</li>
+    </ul>
+
+    <h2>4. How We Use the Information</h2>
+    <ol>
+      <li>Understand which features are used so we can prioritize improvements,</li>
+      <li>Diagnose crashes and performance issues,</li>
+      <li>Detect your cadence in real time during a workout (motion data, on-device only),</li>
+      <li>Honor your in-app purchase and unlock Pro features.</li>
+    </ol>
+    <p>We do <strong>not</strong> use your data for advertising, profiling, automated decision-making with legal effects, or any purpose unrelated to operating the App.</p>
+
+    <h2>5. Legal Basis (GDPR — EU/EEA/UK Users)</h2>
+    <ul>
+      <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — for anonymous product analytics and crash diagnostics, where our interest in maintaining and improving the App does not override your rights, given the data is anonymous and minimal.</li>
+      <li><strong>Performance of a contract</strong> (Art. 6(1)(b)) — for processing in-app purchases.</li>
+    </ul>
+    <p>Because BeatLayer collects only anonymous, non-identifying data, we do not believe we process "personal data" of an identified or identifiable natural person in most cases. Where any doubt exists, you may exercise the rights described in Section 8.</p>
+
+    <h2>6. Third-Party Service Providers</h2>
+    <table>
+      <tr><th>Provider</th><th>Purpose</th><th>Data sent</th><th>Privacy policy</th></tr>
+      <tr><td>Vibe Tracer</td><td>Anonymous product analytics</td><td>See §2.1</td><td><a href="https://vibetracer.xyz">vibetracer.xyz</a></td></tr>
+      <tr><td>Apple — StoreKit 2</td><td>In-app purchase processing</td><td>Handled by Apple; we receive only product ID + Pro flag</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+    </table>
+    <p>We do <strong>not</strong> integrate any advertising SDKs, attribution SDKs, or social-login SDKs.</p>
+
+    <h2>7. Data Retention</h2>
+    <ul>
+      <li><strong>Anonymous analytics events</strong>: retained by Vibe Tracer for a rolling period sufficient for product analysis (typically up to 24 months) and then deleted or further anonymized.</li>
+      <li><strong>Purchase records</strong>: kept by Apple per Apple's policies; locally cached as a single boolean by the App.</li>
+      <li><strong>On-device settings</strong>: kept until you delete the App or reset its data.</li>
+      <li><strong>Motion data</strong>: not retained at all (in-memory only).</li>
+    </ul>
+
+    <h2>8. Your Rights</h2>
+    <h3>8.1 GDPR (EU/EEA/UK)</h3>
+    <ul>
+      <li>Right of access, rectification, erasure, restriction, objection, and data portability.</li>
+      <li>Right to lodge a complaint with your local supervisory authority.</li>
+    </ul>
+    <h3>8.2 CCPA / CPRA (California, USA)</h3>
+    <ul>
+      <li>Right to know what personal information is collected and how it is used.</li>
+      <li>Right to delete personal information.</li>
+      <li>Right to opt out of the "sale" or "sharing" of personal information. <strong>We do not sell or share your personal information.</strong></li>
+      <li>Right to non-discrimination for exercising your rights.</li>
+    </ul>
+    <h3>8.3 PIPL (Mainland China)</h3>
+    <ul>
+      <li>Right to know, decide, access, copy, correct, and delete your personal information.</li>
+      <li>Right to withdraw consent for processing.</li>
+      <li>Right to request explanation of our processing rules.</li>
+    </ul>
+    <h3>8.4 How to exercise your rights</h3>
+    <p>Because BeatLayer has no user accounts and the data we collect is anonymous, in many cases we cannot link analytics records to a specific person. You can, however:</p>
+    <ol>
+      <li><strong>Delete the App</strong> from your device — this removes all locally stored settings and severs the anonymous analytics identifier.</li>
+      <li><strong>Email us</strong> at goodideasalwayswork@zohomail.com with your request. We will respond within 30 days (GDPR) / 45 days (CCPA) / a reasonable period (PIPL).</li>
+    </ol>
+
+    <h2>9. Cross-Border Data Transfers</h2>
+    <p>Vibe Tracer's servers may be located outside your country of residence. Where required by law, we rely on appropriate safeguards (such as the EU Standard Contractual Clauses, or PIPL-compliant standard contracts) for international transfers of any data that may be considered personal.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>BeatLayer is not directed to children under 13 (or under 16 in the EU/EEA, or under 14 in mainland China). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+
+    <h2>11. Security</h2>
+    <p>We follow reasonable technical and organizational measures to protect the limited data we handle. All network traffic between BeatLayer and Vibe Tracer is encrypted via HTTPS/TLS.</p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the "Last Updated" date at the top of this document. Your continued use of BeatLayer after changes take effect constitutes acceptance of the updated policy.</p>
+
+    <h2>13. Contact</h2>
+    <p><strong>Developer:</strong> RD (independent developer)<br>
+    <strong>Email:</strong> goodideasalwayswork@zohomail.com</p>
+    <p>For App Store related issues, you may also contact Apple via the App Store.</p>
+
+    <footer><p>&copy; 2026 Good Ideas Always Work</p></footer>
   </div>
 </body>
 </html>
