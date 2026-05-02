@@ -1,0 +1,31 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="{{ .Site.Home.RelPermalink }}" class="site-logo">
+      <span class="logo-icon">💡</span>
+      <span class="logo-text">{{ .Site.Title }}</span>
+    </a>
+    <nav class="site-nav">
+      <a href="{{ .Site.Home.RelPermalink }}">{{ i18n "nav_home" }}</a>
+      <a href="{{ "products/" | relLangURL }}">{{ i18n "nav_products" }}</a>
+      <a href="{{ "blog/" | relLangURL }}">{{ i18n "nav_blog" }}</a>
+      <a href="{{ "legal/" | relLangURL }}">{{ i18n "nav_legal" }}</a>
+      {{ if .IsTranslated }}
+        {{ range .Translations }}
+          <a href="{{ .RelPermalink }}" class="lang-switch">{{ i18n "switch_lang" }}</a>
+        {{ end }}
+      {{ else }}
+        {{ if eq .Lang "en" }}
+          <a href="/zh/" class="lang-switch">中文</a>
+        {{ else }}
+          <a href="/" class="lang-switch">English</a>
+        {{ end }}
+      {{ end }}
+    </nav>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.site-nav').classList.toggle('open');
+  });
+</script>

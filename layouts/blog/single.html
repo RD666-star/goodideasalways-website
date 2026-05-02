@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="page-single blog-page">
+  <div class="container container-narrow">
+    <h1>{{ .Title }}</h1>
+    <time class="post-date">{{ i18n "posted_on" }} {{ .Date.Format "2006-01-02" }}</time>
+    {{ with .Params.tags }}
+    <div class="tag-list">
+      {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+    <div class="content">
+      {{ .Content }}
+    </div>
+    <a href="{{ "blog/" | relLangURL }}" class="back-link">{{ i18n "back_home" }}</a>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="page-single legal-page">
+  <div class="container container-narrow">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.last_updated }}<p class="legal-updated">Last updated: {{ . }}</p>{{ end }}
+    {{ with .Params.app }}<p class="legal-app">Applies to: {{ . }}</p>{{ end }}
+    <div class="content">
+      {{ .Content }}
+    </div>
+    <a href="{{ "legal/" | relLangURL }}" class="back-link">{{ i18n "back_home" }}</a>
+  </div>
+</article>
+{{ end }}

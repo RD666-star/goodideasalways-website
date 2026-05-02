@@ -1,0 +1,32 @@
+[nav_home]
+other = "首页"
+
+[nav_products]
+other = "产品"
+
+[nav_blog]
+other = "博客"
+
+[nav_legal]
+other = "法律条款"
+
+[read_more]
+other = "阅读更多"
+
+[back_home]
+other = "← 返回首页"
+
+[posted_on]
+other = "发布于"
+
+[switch_lang]
+other = "English"
+
+[footer_text]
+other = "一个独立开发者的用心之作 ❤️"
+
+[all_products]
+other = "所有产品"
+
+[all_posts]
+other = "所有文章"

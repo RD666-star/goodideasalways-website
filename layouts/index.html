@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">{{ if eq .Lang "zh" }}好点子，总能成事{{ else }}Good Ideas Always Work{{ end }}</h1>
+    <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "nav_products" }}</h2>
+    <div class="card-grid">
+      {{ range where .Site.RegularPages "Section" "products" }}
+        {{ if eq .Lang $.Lang }}
+        <a href="{{ .RelPermalink }}" class="card">
+          <div class="card-icon">{{ with .Params.icon }}{{ . }}{{ else }}📱{{ end }}</div>
+          <h3 class="card-title">{{ .Title }}</h3>
+          <p class="card-desc">{{ .Description }}</p>
+        </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "nav_blog" }}</h2>
+    <div class="post-list">
+      {{ range first 5 (where (where .Site.RegularPages "Section" "blog") "Lang" .Lang) }}
+      <a href="{{ .RelPermalink }}" class="post-item">
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary }}</p>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

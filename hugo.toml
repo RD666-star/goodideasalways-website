@@ -1,0 +1,32 @@
+baseURL = "https://goodideasalways.work/"
+title = "Good Ideas Always Work"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    [languages.en.params]
+      description = "Indie apps crafted with care"
+  [languages.zh]
+    languageName = "中文"
+    weight = 2
+    [languages.zh.params]
+      description = "用心打造的独立应用"
+
+[params]
+  author = "Good Ideas Always Work"
+  colorAccent = "#FF6B6B"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="page-single">
+  <div class="container container-narrow">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.date }}<time class="post-date">{{ i18n "posted_on" }} {{ . | time.Format "2006-01-02" }}</time>{{ end }}
+    <div class="content">
+      {{ .Content }}
+    </div>
+    <a href="{{ .Site.Home.RelPermalink }}" class="back-link">{{ i18n "back_home" }}</a>
+  </div>
+</article>
+{{ end }}

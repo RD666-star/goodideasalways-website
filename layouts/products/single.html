@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="page-single product-page">
+  <div class="container container-narrow">
+    <div class="product-header">
+      <span class="product-icon">{{ with .Params.icon }}{{ . }}{{ else }}📱{{ end }}</span>
+      <h1>{{ .Title }}</h1>
+      <p class="product-tagline">{{ .Description }}</p>
+      {{ with .Params.app_store_url }}<a href="{{ . }}" class="btn btn-primary" target="_blank">Download on App Store</a>{{ end }}
+    </div>
+    <div class="content">
+      {{ .Content }}
+    </div>
+    {{ if or .Params.privacy_url .Params.terms_url }}
+    <div class="product-legal">
+      {{ with .Params.privacy_url }}<a href="{{ . }}">Privacy Policy</a>{{ end }}
+      {{ with .Params.terms_url }}<a href="{{ . }}">Terms of Use</a>{{ end }}
+    </div>
+    {{ end }}
+    <a href="{{ "products/" | relLangURL }}" class="back-link">{{ i18n "back_home" }}</a>
+  </div>
+</article>
+{{ end }}

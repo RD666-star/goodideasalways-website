@@ -1,0 +1,32 @@
+[nav_home]
+other = "Home"
+
+[nav_products]
+other = "Products"
+
+[nav_blog]
+other = "Blog"
+
+[nav_legal]
+other = "Legal"
+
+[read_more]
+other = "Read More"
+
+[back_home]
+other = "← Back to Home"
+
+[posted_on]
+other = "Posted on"
+
+[switch_lang]
+other = "中文"
+
+[footer_text]
+other = "Made with ❤️ by an indie developer"
+
+[all_products]
+other = "All Products"
+
+[all_posts]
+other = "All Posts"
